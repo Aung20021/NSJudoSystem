@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Calculates and compares the weight of an athlete with a chosen weight category.
  */
-class WeightCalculator {
+abstract class WeightCalculator {
 
   private static int weight; // current weight
 

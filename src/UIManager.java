@@ -98,7 +98,12 @@ class UIManager {
       System.out.print(message);
       String input = scanner.nextLine();
       try {
-        return Integer.parseInt(input);
+        int number = Integer.parseInt(input);
+        if (number >= 0) {
+          return number;
+        } else {
+          System.out.println("Invalid input. Please enter a positive integer.");
+        }
       } catch (NumberFormatException e) {
         System.out.println("Invalid input. Please enter a valid integer.");
       }

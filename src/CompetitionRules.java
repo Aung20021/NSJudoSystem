@@ -1,4 +1,4 @@
-class CompetitionRules {
+abstract class CompetitionRules {
 
   /*
    * Method to display rules

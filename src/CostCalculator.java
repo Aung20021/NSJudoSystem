@@ -1,6 +1,6 @@
 import java.text.DecimalFormat;
 
-public class CostCalculator {
+abstract class CostCalculator {
 
   /**
    * Calculates the total cost for an athlete's training plan, competitions, and private coaching.
