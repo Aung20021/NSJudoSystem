@@ -218,8 +218,6 @@ public class Athlete implements Serializable {
     // Compare weight with weight category
     WeightCalculator.compareWeight(this, weightCategory, scanner);
 
-    // System.out.println(weightCategoryMessage);
-
     // Display the cost of each item separately
     System.out.println();
     System.out.println("Athlete's name: " + name);
