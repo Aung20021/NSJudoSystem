@@ -112,19 +112,18 @@ public class Athlete implements Serializable {
         System.out.println(
           "Invalid name. Please enter a valid name (no numbers, max 50 characters)."
         );
-      } else {
+      } else if (name.length() <= 3) {
         System.out.println(
           "Name must be more than 3 characters. Please enter again."
         );
+      } else {
+        // Format the name with the first initial as a capital letter and the rest as lowercase
+        name = formatName(name);
+        // Display a line after successful name insertion
+        System.out.println("Name successfully inserted: " + name);
+        System.out.println();
       }
     } while (isValidName(name) || name.length() <= 3);
-
-    // Format the name with the first initial as a capital letter and the rest as lowercase
-    name = formatName(name);
-
-    // Display a line after successful name insertion
-    System.out.println("Name successfully inserted: " + name);
-    System.out.println();
 
     // Display competition rules
     CompetitionRules.displayRules();

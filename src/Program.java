@@ -72,9 +72,11 @@ public class Program {
       )
     ) {
       oos.writeObject(athletes);
-      System.out.println("Athlete information saved successfully.");
+      System.out.println("Athlete(s) information saved successfully.");
     } catch (IOException e) {
-      System.err.println("Error saving athlete information: " + e.getMessage());
+      System.err.println(
+        "Error saving athlete(s) information: " + e.getMessage()
+      );
     }
   }
 
