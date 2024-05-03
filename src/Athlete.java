@@ -87,8 +87,10 @@ public class Athlete implements Serializable {
       trainingPlan +
       ", Current Weight = " +
       currentWeight +
+      "kg" +
       ", Private CoachingHours = " +
       privateCoachingHours +
+      "hr" +
       ", Competition(s) Entered = " +
       competitionsEntered +
       ", Weight Category = " +
